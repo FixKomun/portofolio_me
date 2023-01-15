@@ -1,0 +1,1 @@
+the web market (Web Tržnica) is an e-commerce type of website. Customers can set up and buy products from other manufacturers by electronic payment (PayPal or Stripe).

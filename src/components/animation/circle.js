@@ -1,0 +1,30 @@
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+
+const Circle = () => {
+  return (
+    <StyledSvg
+      width="64"
+      height="144"
+      viewBox="0 0 64 144"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        id="Eclipse"
+        d="M64 72C64 111.764 31.7645 144 -8 144C-47.7645 144 -80 111.764 -80 72C-80 32.2355 -47.7645 0 -8 0C31.7645 0 64 32.2355 64 72Z"
+        fill="#D9D9D9"
+      />
+    </StyledSvg>
+  );
+};
+
+const StyledSvg = styled(motion.svg)`
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 3;
+`;
+
+export default Circle;
