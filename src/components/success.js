@@ -15,7 +15,7 @@ const Success = ({ values }) => {
       exit={{ opacity: 0 }}
     >
       <div className="success-container">
-        <h1>Thank you for enquiry 🌠.</h1>
+        <h1>Thank you for your enquiry 🌠.</h1>
         <p>
           We have sent you the reply message and will contact you back as soon
           as possible👋.

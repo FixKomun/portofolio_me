@@ -99,7 +99,7 @@ const Project = () => {
             }}
           >
             The Recipe<i>Now</i> is a website where you can post your food
-            recipes. It is connected with SQL database where every user's data
+            recipes. It is connected with SQL database where every users' data
             is safely stored. Desinged in <span>Figma</span> and implemented
             with <span>iView</span> and <span>Bootstrap</span> library. See this
             project on{" "}

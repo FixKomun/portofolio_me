@@ -49,7 +49,7 @@ const About = () => {
                 In the past couple of years, I have been focused on{" "}
                 <span>professional development</span> and gaining new skills and
                 experiences in the development of web applications.
-                <br /> <span>Graduated</span> from Faculty of Electrical
+                <br /> <span>I graduated</span> from Faculty of Electrical
                 Engineering, Computer Science and Information Technology Osijek.
               </motion.p>
               <motion.p variants={textAnimation3} className="experience">

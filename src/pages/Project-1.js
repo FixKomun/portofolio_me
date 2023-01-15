@@ -117,14 +117,15 @@ const Project = () => {
             }}
           >
             The web market <span>(Web Tržnica)</span> is an e-commerce type of
-            website where customers can set up their products and buy from other
-            manufacturers using electronic payment (PayPal or Stripe). Made with
+            website where customers can advertise their products and buy other
+            products from different manufacturers using electronic payment
+            (PayPal or Stripe). It is made with
             <span> Vue.js</span> and <span>Laravel</span> framework with
             integrated <span> PostgreSQL </span>database system. Every
             functionality of this websites is <span>Verified</span> and{" "}
-            <span>Validated</span> so that user can't manipulate with server.
+            <span>Validated</span> so that users can't manipulate with server.
             This project implements main functionalities of e-commerce sites as
-            well as email reset password funcionality and order confirmation
+            well as e-mail reset password funcionality and order confirmation
             mail. See this project on{" "}
             <a href="https://github.com/FixKomun/trznica">
               <span>GitHub.</span>
