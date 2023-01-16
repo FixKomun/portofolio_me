@@ -37,6 +37,18 @@ const StyledSuccess = styled(motion.div)`
     padding: 3rem 5rem;
     border-radius: 1rem;
   }
+  @media (max-width: 720px) {
+    .success-container {
+      padding: 2rem 2rem;
+      width: 80%;
+      h1 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 `;
 
 export default Success;

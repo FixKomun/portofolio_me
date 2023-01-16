@@ -170,6 +170,12 @@ const StyledContact = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1000px) {
+    height: 100%;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    flex-direction: column;
+  }
 `;
 const Form = styled.form`
   display: flex;
@@ -178,10 +184,11 @@ const Form = styled.form`
   background: #b3b2b2;
   width: 60%;
   color: #434658;
+  justify-content: space-between;
   .left-container {
-    flex: 1;
+    width: 25%;
+    margin-top: 1rem;
     .thumbs-up {
-      margin-left: 1rem;
     }
     .left-info {
       padding-bottom: 4rem;
@@ -194,8 +201,7 @@ const Form = styled.form`
     }
   }
   .right-container {
-    flex: 2;
-
+    width: 65%;
     .label {
       display: block;
     }
@@ -233,6 +239,7 @@ const Form = styled.form`
       color: #e9e9e9;
       letter-spacing: 1px;
       border: none;
+
       transition: all 0.2s ease-in;
       cursor: pointer;
       margin-left: 30%;
@@ -240,6 +247,47 @@ const Form = styled.form`
       :hover {
         outline: none;
         box-shadow: 2px 2px black;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem 2rem;
+    .left-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .right-container {
+      width: 100%;
+      .submit-button {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    width: 75%;
+  }
+  @media (max-width: 400px) {
+    .left-container {
+      .left-info {
+        h1 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .right-container {
+      label {
+        font-size: 0.9rem;
+      }
+      input {
+        font-size: 0.8rem;
       }
     }
   }

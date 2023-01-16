@@ -117,6 +117,48 @@ const StyledNav = styled(motion.nav)`
       height: 28px;
     }
   }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    ul {
+      width: 100%;
+      justify-content: space-around;
+      padding-top: 1rem;
+      li {
+        padding-right: 1rem;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    ul {
+      font-size: 0.9rem;
+    }
+    .socials {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      .facebook {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    ul {
+      font-size: 0.7rem;
+    }
+    .socials {
+      img {
+        width: 15px;
+        height: 20px;
+      }
+      .facebook {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
 `;
 
 const Underline = styled(motion.div)`

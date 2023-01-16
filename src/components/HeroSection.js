@@ -123,6 +123,15 @@ const Section = styled(motion.div)`
       height: 30px;
     }
   }
+  @media (max-width: 549px) {
+    .footer-right {
+      font-size: 0.7rem;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 `;
 const Image = styled(motion.img)`
   width: 100%;
@@ -164,6 +173,71 @@ const Expert = styled(motion.div)`
       }
     }
   }
+  @media (max-width: 1200px) {
+    .more {
+      top: 70%;
+    }
+    .logo-container {
+      .logo-list {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    .more {
+      top: 70%;
+    }
+    .logo-container {
+      .logo-list {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  @media (max-width: 549px) {
+    h4 {
+      font-size: 0.8rem;
+    }
+    .logo-container {
+      .logo-list {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .more {
+      top: 69%;
+    }
+    .expert {
+      top: 57%;
+    }
+  }
+  @media (max-width: 400px) {
+    h4 {
+      font-size: 0.6rem;
+    }
+    .logo-container {
+      top: 62%;
+      .logo-list {
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .more {
+      top: 69%;
+    }
+    .expert {
+      top: 60%;
+    }
+  }
 `;
 
 const HeroDescription = styled(motion.div)`
@@ -183,13 +257,51 @@ const HeroDescription = styled(motion.div)`
   .bottom-description {
     padding-top: 2rem;
   }
+  @media (max-width: 1200px) {
+    font-size: 1.5rem;
+    span {
+      font-size: 1.7rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    display: block;
+    padding-top: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    left: 0;
+    width: 100%;
+  }
+  @media (max-width: 750px) {
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 549px) {
+    padding: 5rem 3rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 400px) {
+    font-size: 1rem;
+    line-height: 2rem;
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
 `;
 const Button = styled(motion.button)`
   position: absolute;
   bottom: 10%;
   left: 50%;
   padding: 1.5rem 3rem;
-  transform: translate(-50%, -15%);
+
   border-radius: 10px;
   background: transparent;
   color: white;
@@ -197,5 +309,27 @@ const Button = styled(motion.button)`
   font-size: 1.2rem;
   cursor: pointer;
   overflow: hidden;
+  @media (max-width: 1000px) {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    bottom: 15%;
+  }
+  @media (max-width: 750px) {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    bottom: 17%;
+  }
+  @media (max-width: 549px) {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+    bottom: 20%;
+    left: 55%;
+  }
+  @media (max-width: 400px) {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+    bottom: 18%;
+    left: 55%;
+  }
 `;
 export default HeroSection;

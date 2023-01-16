@@ -87,11 +87,6 @@ const About = () => {
           </DownloadSection>
         </ContactDownload>
       </StyledAbout>
-
-      <Line />
-      <Line2 />
-      <Line3 />
-      <Line4 />
     </>
   );
 };
@@ -99,33 +94,46 @@ const About = () => {
 const StyledAbout = styled(motion.div)`
   height: 100vh;
   padding: 12rem 13rem;
-
   position: relative;
   z-index: 3;
+  @media (max-width: 1000px) {
+    padding: 14rem 10rem;
+  }
+  @media (max-width: 800px) {
+    padding: 14rem 6rem;
+  }
+  @media (max-width: 580px) {
+    padding: 14rem 4rem;
+  }
+  @media (max-width: 515px) {
+    padding: 14rem 2rem;
+  }
 `;
 
 const AboutSection = styled.div`
   position: relative;
   display: flex;
-
   background: #b3b2b2;
   border-radius: 10px;
   z-index: 2;
   height: 450px;
   width: 100%;
   color: #434658;
+
   .img-container {
+    width: 30%;
     img {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
       height: 100%;
-      width: 400px;
+      width: 100%;
       margin: 0 auto;
       object-fit: cover;
     }
   }
   .info-container {
     overflow: hidden;
+    width: 70%;
     .info-title {
       h1 {
         font-weight: lighter;
@@ -151,10 +159,74 @@ const AboutSection = styled.div`
       text-align: center;
       font-weight: lighter;
       font-size: 1.6rem;
-      margin: 2rem 2rem 0 2rem;
+      margin: 2rem 2rem 1rem 2rem;
       span {
         font-weight: bold;
         font-size: 1.7rem;
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .info-container {
+      .info-description {
+        font-size: 1.1rem;
+      }
+      .last-years {
+        padding: 2rem 5rem 0rem 2rem;
+      }
+      .experience {
+        font-size: 1.3rem;
+        span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    height: 1000px;
+    .img-container {
+      width: 100%;
+      height: 40%;
+      img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+      }
+    }
+    .info-container {
+      width: 100%;
+      height: 60%;
+      .info-description {
+        .last-years {
+          padding: 2rem 2rem 0rem 2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .info-container {
+      .last-years {
+        font-size: 1rem;
+      }
+      .experience {
+        font-size: 1.1rem;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .info-container {
+      .last-years {
+        font-size: 0.9rem;
+      }
+      .experience {
+        font-size: 0.9rem;
+        span {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -164,10 +236,25 @@ const ContactDownload = styled.div`
   justify-content: space-between;
   color: #cccccc;
   padding: 2rem 2rem;
+  @media (max-width: 1200px) {
+    padding: 2rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
 `;
 const Contact = styled(motion.div)`
   display: flex;
   gap: 1rem;
+  @media (max-width: 1200px) {
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+  @media (max-width: 515px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
 `;
 const DownloadSection = styled(motion.div)`
   position: relative;
@@ -177,6 +264,31 @@ const DownloadSection = styled(motion.div)`
   .download-icons {
     cursor: pointer;
     padding-left: 1rem;
+  }
+  @media (max-width: 1200px) {
+    gap: 2rem;
+    .download-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 4rem;
+    }
+  }
+  @media (max-width: 515px) {
+    h2 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.8rem;
+    }
   }
 `;
 export default About;

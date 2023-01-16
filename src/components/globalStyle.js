@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
         font-family:"Poppins",sans-serif;
         background:#050c1ae3;
         overflow:hidden;
+        @media (max-width:1400px){
+            overflow-y:visible;
+        }
     }
 
     a {
